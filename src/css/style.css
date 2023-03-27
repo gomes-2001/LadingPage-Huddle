@@ -31,7 +31,7 @@ body {
 }
 .imagem img{
     max-width: 700px;
-    height: 100%
+    max-height: 100%
 }
 .info {
     margin-right: 45px;
@@ -84,4 +84,43 @@ body {
     color: var(--color-primary-two);
     border-radius: 100%;
     border: 1px solid var(--color-primary-two);
+}
+
+
+@media (max-width: 1024px) {
+    .imagem img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .info h1 {
+        font-size: 25px;
+    }
+    .info p {
+        font-size: 12px;
+    }
+}
+@media (max-width: 576px) {
+    .section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media (max-width: 375px){
+    .section {
+        display: flex;
+        flex-direction: column;
+    }
+    .section .info {
+        justify-content: center;
+        align-items: center;
+    }
+
 }
