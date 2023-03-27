@@ -48,10 +48,11 @@ body {
     margin-bottom: 20px;
 }
 .info input[type=submit] {
+    font-size: 20px;
     font-weight: 600;
     padding: 15px 60px;
     border-radius: 30px;
-    border: none;
+    box-shadow: 2px 4px 10px black;
     cursor: pointer;
     color:var(--color-primary-two);
     transition: 0.4s ease-in-out;
@@ -68,9 +69,21 @@ body {
     justify-content: flex-end;
     margin: 30px 85px;
 }
+footer .coded {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+footer .coded a {
+    text-decoration: none;
+    color: var(--color-primary-two);
+}
+footer .coded a:hover {
+    color: aqua;
+}
 .footer a {
     margin: 10px;
-    
 }
 .footer .fab {
     color: #fff;
@@ -85,38 +98,3 @@ body {
 }
 
 
-@media (max-width: 1024px) {
-    .imagem img {
-        max-width: 100%;
-        max-height: 100%;
-    }
-    .info h1 {
-        font-size: 25px;
-    }
-    .info p {
-        font-size: 12px;
-    }
-}
-@media (max-width: 576px) {
-    .section {
-        flex-direction: column;
-    }
-    .info {
-        margin-left: 70px;
-    }
-    .footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-@media (max-width: 375px){
-    .section {
-        display: flex;
-        flex-direction: column;
-    }
-    .section .info {
-        margin-left: 50px;
-    }
-
-}
